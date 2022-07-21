@@ -1,4 +1,4 @@
-summary_values <- simulations %>%
+summary_values = simulations %>%
   group_by(step) %>%
   summarise(mean_return = mean(value), max_return = max(value), min_return = min(value)) %>%
   gather("series", "value", -step)
